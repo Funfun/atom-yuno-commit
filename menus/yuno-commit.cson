@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable yuno-commit': 'yuno-commit:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'yuno-commit'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'yuno-commit:toggle' }
+      ]
+    ]
+  }
+]
